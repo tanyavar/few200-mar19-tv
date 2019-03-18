@@ -1,0 +1,27 @@
+<ul class="list-unstyled">
+  <!-- <li class="alert alert-info"><input type="button"
+           class="btn btn-sm btn-success"
+           value="X">Clean Garage</li>
+  <li class="alert alert-info"><input type="button"
+           class="btn btn-sm btn-success"
+           value="X">Get Carpets Cleaned</li>
+  <li class="alert alert-info"><input type="button"
+           class="btn btn-sm btn-success"
+           value="X">Fix Light in Laundry Room</li>
+  <li class="alert alert-danger completed">Take out Trash</li> -->
+
+  <ul class="list-unstyled">
+    <li class='alert'
+        [ngClass]="{'completed': item.completed, 'alert-danger': item.completed, 'alert-info': !item.completed}"
+        *ngFor='let item of items'>
+      <input type='button'
+             class='btn btn-sm btn-success'
+             *ngIf='!item.completed'
+             value='X'>
+      {{item.description}}
+
+    </li>
+  </ul>
+
+
+</ul>
