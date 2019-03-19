@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input } from '@angular/core';
 import { ListItem } from '../../models';
 
@@ -14,4 +15,8 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
+  xMark(item: ListItem) {
+    item.completed = true;
+  }
 }
+

@@ -1,6 +1,8 @@
+
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ReduxDemoComponent } from './components/redux-demo/redux-demo.component';
 import { CommunicationsComponent } from './features/communications/communications.component';
 
 const routes: Routes = [{
@@ -12,6 +14,10 @@ const routes: Routes = [{
   component: CommunicationsComponent
 },
 {
+  path: 'redux-demo',
+  component: ReduxDemoComponent
+},
+{
   path: '**',
   redirectTo: 'dashboard'
 }];
@@ -21,3 +27,4 @@ const routes: Routes = [{
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
