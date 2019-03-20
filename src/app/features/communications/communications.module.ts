@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommunicationsComponent } from './communications.component';
@@ -19,4 +18,3 @@ import { MessageService } from './services/message.service';
   providers: [MessageService]
 })
 export class CommunicationsModule { }
-
