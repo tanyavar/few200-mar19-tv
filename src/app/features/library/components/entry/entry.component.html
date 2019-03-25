@@ -9,10 +9,9 @@
   <label>Book Format</label>
   <select class='form-control'
           #format>
-    <option value='None'></option>
-    <option value='Hardcover'>Hardcover</option>
-    <option value='Paperback'>Paperback</option>
-    <option value='E-Book'>E-Book</option>
+    <option *ngFor="let format of formats"
+            [value]='format'>{{format}}</option>
+
   </select>
   <p></p>
   <input type="button"
