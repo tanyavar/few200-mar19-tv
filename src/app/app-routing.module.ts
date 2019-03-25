@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { CommunicationsComponent } from './features/communications/communications.component';
 import { ReduxDemoComponent } from './components/redux-demo/redux-demo.component';
+import { CommunicationsComponent } from './features/communications/communications.component';
+import { LibraryComponent } from './features/library/library.component';
 import { TodolistComponent } from './features/todolist/todolist.component';
 
 const routes: Routes = [{
@@ -20,6 +21,10 @@ const routes: Routes = [{
 {
   path: 'todo-list',
   component: TodolistComponent
+},
+{
+  path: 'library',
+  component: LibraryComponent
 },
 {
   path: '**',

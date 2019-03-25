@@ -1,5 +1,4 @@
 
-
 // import { Action } from '@ngrx/store';
 import { createEntityAdapter, EntityState } from '@ngrx/entity';
 import * as actions from '../actions/list.actions';
